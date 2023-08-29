@@ -43,6 +43,7 @@ public class JobScheduleHelper {
             public void run() {
 
                 try {
+                    // 线程暂停4-5秒
                     TimeUnit.MILLISECONDS.sleep(5000 - System.currentTimeMillis()%1000 );
                 } catch (InterruptedException e) {
                     if (!scheduleThreadToStop) {
